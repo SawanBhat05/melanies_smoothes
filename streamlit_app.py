@@ -41,6 +41,6 @@ if ingredients_list:
     # Button with a unique key to avoid the DuplicateWidgetID issue
     time_to_insert = st.button('Submit Order', key='submit_order')
     # Insert when the button is clicked
-    if time_to_insert:
+if time_to_insert:
         session.sql(my_insert_stmt).collect()
         st.success('Your Smoothie is ordered!', icon="✅")
